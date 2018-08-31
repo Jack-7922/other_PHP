@@ -1,12 +1,15 @@
 <?php
-header("Content-type: text/xml; charset=utf-8");
+echo md5("password");
+echo "<br/>";
+echo sha1("password");
+echo "<br>";
+echo crypt("password");
+echo "<br />";
+$hash = password_hash("password", PASSWORD_BCRYPT);
+echo $hash;
+echo "br />";
+$x = "password";
+if (password_verify($x, $hash)) {
+	echo "OK";
+}
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My page</title>
-</head>
-<body>
- <h1> Me page русский</h1>	
-</body>
-</html>
