@@ -12,7 +12,7 @@ if(!isset($_SESSION['test']) and !isset ($_POST['q'])) {
     $title = $_POST['title'];
 }
 ?>
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
