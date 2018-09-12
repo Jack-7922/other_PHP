@@ -1,4 +1,6 @@
 <?php
+define('PATH_LOG', 'pat.log');
+include 'inc/log.inc.php';
 session_start();
 if(!isset($_SESSION['test']) and !isset ($_POST['q'])) {
     // Если первый запуск теста, то инициализируем переменные
@@ -61,5 +63,6 @@ if(!isset($_SESSION['test']) and !isset ($_POST['q'])) {
         </td>
     </tr>
 </table>
+    <li><a href="index.php?id=log"> Журнал посещений</a></li>
 </body>
 </html>
